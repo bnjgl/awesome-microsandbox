@@ -53,14 +53,13 @@ Entries marked *Experimental* are described by their authors as alpha, pre-relea
 
 ## Agent Frameworks
 
-- [agentscope-go](https://github.com/agentic-spring-ai/agentscope-go/tree/main/pkg/workspace/microsandbox) - Workspace backend for AgentScope Go.
 - [ai-sdk-microsandbox](https://github.com/DaniAkash/agent-toolkit/tree/main/packages/ai-sdk-microsandbox) - Sandbox provider for the Vercel AI SDK v7 harness. *Experimental.*
 - [ComputeSDK](https://github.com/computesdk/computesdk) - Multi-provider sandbox SDK with local and cloud microsandbox backends.
 - [Condukt by Tuist](https://github.com/tuist/condukt) - Elixir agentic engine with a native microsandbox execution backend.
 - [effect-uai](https://github.com/betalyra/effect-uai) - Sandbox provider for Effect-based agents. *Experimental.*
-- [Eve by Vercel](https://eve.dev/docs/sandbox#microsandbox) - Sandbox backend for Eve agents.
+- [Eve by Vercel](https://eve.dev/docs/sandbox/microsandbox) - Sandbox backend for Eve agents.
 - [langchain-microsandbox](https://github.com/kenwoodjw/langchain-microsandbox) - Sandbox backend for LangChain Deep Agents.
-- [model-sandbox-tools](https://github.com/iyifr/model-sandbox-tools) - Sandbox plugin for TypeScript agent frameworks.
+- [openai-agents-microsandbox](https://github.com/iyifr/openai-agents-microsandbox) - TypeScript and Python sandbox tools and runners for the OpenAI Agents SDK.
 - [pydantic-ai-microsandbox](https://github.com/mokronos/pydantic-ai-microsandbox) - Minimal Pydantic AI agent with a sandboxed command tool.
 - [Smithers](https://github.com/smithersai/smithers) - Agent workflow orchestrator with a microsandbox provider (`@smthrs/microsandbox`).
 
@@ -71,20 +70,23 @@ Entries marked *Experimental* are described by their authors as alpha, pre-relea
 - [agent-vm by Wiren Board](https://github.com/wirenboard/agent-vm) - Per-project coding-agent VMs on a patched microsandbox build.
 - [agents-sandbox](https://github.com/inoio/agents-sandbox) - Runner for OpenCode, Claude Code, and Pi.
 - [GSA TTS Agentic Coding Quickstart](https://github.com/GSA-TTS/agentic-coding-quickstart) - USAi coding-agent quickstart with sandbox isolation.
-- [micro-pi](https://github.com/asyrjasalo/micro-pi) - Pi coding agent in a microVM.
+- [microsandbox-ai](https://github.com/ssadedin/microsandbox-ai) - Claude Code and Pi launchers with host-side credential substitution.
+- [msb-manager](https://github.com/runoverlabs/sandbox-manager) - Per-project agent VMs with host-side secrets and egress policies.
 - [opencode-image](https://github.com/ctxinf/opencode-image) - OpenCode image for Docker and microsandbox.
 - [pi-backend](https://github.com/msdavid/pi-backend) - Self-deployable Pi service with remote sessions, crons, and microVM execution.
 - [pi-microsandbox](https://github.com/hcohe/pi-microsandbox) - Pi extension that runs file and shell tools in microVMs.
 - [reef](https://github.com/skalenetwork/microsandbox-reef) - Agent runner with TOML roles, domain allowlists, and host-bound secrets.
 - [reve](https://github.com/tobi/reve) - Durable Ruby coding agents that always run in microVMs.
+- [Sandbox Studio](https://github.com/lukaskoebe/sandbox-studio) - Early-stage coding-agent workspaces with host-side approvals and secrets.
 - [Workestrate](https://github.com/rybskiworks/workestrate) - Nix/TOML-defined agent VMs with SOPS secrets and a Rust control CLI.
 - [wrap](https://github.com/tobi/wrap) - Isolated Arch Linux microVMs for coding agents and project commands.
 
 ## Dev Environments
 
+- [agentbay](https://github.com/sisimomo/agentbay) - Customizable macOS agent environment with Docker and shared MCP services.
 - [boxme](https://github.com/kauffinger/boxme) - Package installs in a microVM, with file and network changes shown for approval.
 - [devbox](https://github.com/HellButcher/devbox) - Sandboxed Linux development environment.
-- [Devsy](https://github.com/devsy-org/devsy) - Local and remote development environments with a microsandbox driver.
+- [Devsy](https://github.com/devsy-org/devsy-provider-microsandbox) - External workspace provider for Devsy using the CLI and Go SDK.
 - [lilbox](https://github.com/lilco-dev/lilbox) - Self-hosted exe.dev-style microVMs published to your Tailscale tailnet.
 - [mezha](https://github.com/odzhu/mezha) - Declarative environments with devenv provisioning and Git synchronization.
 - [microkitchen](https://github.com/timjb/microkitchen) - Mise-based VM launcher with Docker and interactive network approvals. *Experimental.*
@@ -97,13 +99,12 @@ Entries marked *Experimental* are described by their authors as alpha, pre-relea
 - [Cellar](https://github.com/prodioslabs/cellar) - Self-hosted microVM clusters with a gateway for the official SDKs.
 - [mc2](https://github.com/l3wi/mc2) - Compose-style orchestrator for microVMs.
 - [Microsandbox Cloud](https://github.com/venbrinoDev/microsanbox-cloud) - Single-host control plane and signed proxy for remote VMs.
-- [microsandbox-executor](https://github.com/Hari31416/microsandbox-executor) - Python and Bash execution service with persistent workspaces.
 - [msbd](https://github.com/mark3labs/msbd) - REST server for creating and driving microVMs over HTTP.
 - [nomad-driver-microsandbox](https://github.com/jamescorbett/nomad-driver-microsandbox) - HashiCorp Nomad task driver.
 - [Once by Tuist](https://github.com/tuist/once) - Remote task runner with microsandbox compute.
 - [operator by Devic](https://github.com/devicai/operator) - Sandbox orchestration with microsandbox and Docker runtimes, TTLs, and snapshots.
 - [shoes-microsandbox](https://github.com/whywaita/shoes-microsandbox) - Provider for myshoes for ephemeral GitHub Actions self-hosted runners.
-- [willet](https://github.com/gerritlansing/willet) - A daemon that manages a GitHub Actions runner scale set and runs every job in a fresh, ephemeral microsandbox microVM.
+- [willet](https://github.com/gerritlansing/willet) - GitHub Actions runner scale-set daemon with a fresh VM for each job.
 
 ## Images, Packaging, and Nix
 
@@ -111,17 +112,20 @@ Entries marked *Experimental* are described by their authors as alpha, pre-relea
 - [docker-in-microsandbox](https://github.com/rhoboro/docker-in-microsandbox) - Running Docker inside a sandbox.
 - [microsandbox-cli.nix](https://github.com/renato-zannon/microsandbox-cli.nix) - Nix flake for the `msb` CLI.
 - [microsandbox-flake](https://github.com/kasuboski/microsandbox-flake) - Alternative Nix flake for the `msb` CLI.
+- [Monkeybox](https://github.com/vbuterin/monkeybox) - Nix-packaged environments with explicit access grants; license undecided. *Experimental.*
 - [nix-msb](https://github.com/conao3/nix-msb) - Nix tooling for running OCI images in microVMs.
 
 ## Tools and UIs
 
 - [hoosegow](https://github.com/billroy/hoosegow) - PTY-first terminal app for running coding agents in sandboxes.
-- [microsandbox-tui](https://github.com/cfranzen/microsandbox-tui) - Terminal UI for managing sandboxes.
+- [microsandbox-dashboard](https://github.com/tardigrada07/microsandbox-dashboard) - Local web dashboard with live metrics and resource resizing.
+- [microsandbox-tui by cfranzen](https://github.com/cfranzen/microsandbox-tui) - Terminal UI for managing sandboxes.
+- [microsandbox-tui by Freudenjunge](https://github.com/Freudenjunge/microsandbox-tui) - Rust SDK terminal dashboard with templates, metrics, and snapshots.
 - [msb-admin](https://github.com/topabomb/msb-admin) - Web admin UI built with FastAPI, HTMX, and xterm.js.
 - [msb-omarchy](https://github.com/ya-luotao/msb-omarchy) - Omarchy desktop in an Apple Silicon microVM, shown in a macOS window or over VNC. *Experimental.*
 - [omarchy-microsandbox](https://github.com/ya-luotao/omarchy-microsandbox) - Omarchy bar plugin for managing microVMs.
 - [rightsize](https://github.com/ngriaznov/rightsize-rust) - Testcontainers-style integration testing on microVMs for Rust and TypeScript.
-- [Silo](https://github.com/0xpolarzero/silo) - Desktop app for managing local and remote VMs on macOS and Linux.
+- [Silo](https://github.com/amontlabs/silo) - Apple Silicon macOS desktop app for managing local and remote Linux VMs.
 - [vivarium-cli](https://github.com/assaf-benjosef/vivarium-cli) - CLI for managing Vivarium agent sandboxes.
 
 ## Built with microsandbox
@@ -131,14 +135,16 @@ Applications that use microsandbox as their execution backend.
 - [AgentConnect](https://github.com/agentconnect-md/agentconnect) - Team agents for chats, issues, and pull requests.
 - [Agentic Usability by PSPDFKit Labs](https://github.com/PSPDFKit-labs/agentic-usability) - CLI measuring how well coding agents use SDKs, run in sandboxes.
 - [h5i](https://github.com/h5i-dev/h5i) - Agent-native red-teaming workspace with an optional microsandbox backend.
+- [kali-mcp-sandbox](https://github.com/B1a0k/kali-mcp-sandbox) - Kali Linux MCP tools in persistent VMs on Windows.
 - [OpenWork microsandbox example](https://github.com/different-ai/openwork/tree/dev/examples/microsandbox-openwork-rust) - Rust launcher for the OpenWork server with persistent workspace mounts.
 - [sandboxed-lit by LlamaIndex](https://github.com/run-llama/sandboxed-lit) - CLI agent that runs LiteParse and shell tools in a sandbox.
 
 ## Learn
 
 - [Changelog](https://github.com/superradcompany/microsandbox/tree/main/docs/changelog) - Product changelog and update notes.
-- [Examples](https://docs.microsandbox.dev/examples/overview) - Official examples: agents, browser automation, CI runners, Docker-in-sandbox, and warm workers.
+- [How-to guides](https://docs.microsandbox.dev/how-to/overview) - Official guides for agents, browser automation, CI runners, and Docker.
 - [Mario Never Dies](https://github.com/superradcompany/mario-never-dies) - Official Python demo of VM checkpoints and branching with a Mario-playing agent.
+- [msb-in-90s](https://github.com/superradcompany/msb-in-90s) - Official short feature walkthroughs with runnable SDK examples and benchmarks.
 - [Multiverse of Madness](https://github.com/superradcompany/multiverse-of-madness) - Official TypeScript gameplay harness with Doom and chess examples.
 - [Security](https://docs.microsandbox.dev/security/overview) - Isolation model and secrets handling.
 - [Troubleshooting](https://docs.microsandbox.dev/troubleshooting/linux) - Platform guides for Linux, macOS, and Windows.
@@ -146,11 +152,10 @@ Applications that use microsandbox as their execution backend.
 ## Under the Hood
 
 - [libkrun](https://github.com/libkrun/libkrun) - The microVM library microsandbox is built on.
-- [msbnet](https://github.com/superradcompany/msbnet) - Official networking backend for sandbox VMs.
 - [smoltcp](https://github.com/smoltcp-rs/smoltcp) - Userspace TCP/IP stack used for sandbox networking.
 
 ## Contributing
 
 Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first.
 
-Last reviewed 2026-09-24 against upstream sources, not runtime-tested. Check each project's supported microsandbox version; recent activity does not guarantee compatibility with the latest release.
+Last health check 2026-10-20: links and repository status checked; changed entries reviewed against upstream sources, not runtime-tested. Check each project's supported microsandbox version; recent activity does not guarantee compatibility with the latest release.
